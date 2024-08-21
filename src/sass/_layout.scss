@@ -1,0 +1,39 @@
+.app {
+  padding: 4rem;
+  background-color: $white;
+  height: 100vh;
+
+  & > * {
+    padding: $p3;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.5rem $black;
+    border: 1px solid $black;
+  }
+}
+
+.car-form {
+  background-color: $primary-blue;
+}
+
+.car-search {
+  background-color: $black;
+  color: $white;
+  justify-content: space-between;
+}
+
+.car-list {
+  background-color: $primary-green;
+  min-height: 20rem;
+  max-height: 30rem;
+  align-items: start;
+}
+
+.car-value {
+  background-color: $black;
+  color: $white;
+
+  justify-content: right;
+}

@@ -1,0 +1,40 @@
+.warn {
+  background-color: $primary-red;
+}
+
+.success {
+  background-color: $primary-green;
+}
+
+.primary {
+  background-color: $primary-blue;
+}
+
+.heading-2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+$p1: 1rem;
+$p2: 2rem;
+$p3: 3rem;
+$p4: 4rem;
+
+$input-br: 0.3rem;
+
+.btn {
+  height: fit-content; // Breaking flexbox's rules
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+
