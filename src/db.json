@@ -1,3 +1,9 @@
 {
-  "cars": []
+  "cars": [
+    {
+      "id": "d47a",
+      "name": "Ford Maverick",
+      "value": 15000
+    }
+  ]
 }

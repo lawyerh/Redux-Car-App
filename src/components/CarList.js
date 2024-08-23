@@ -1,11 +1,25 @@
+import { useSelector, useDispatch } from "react-redux";
+import { fetchCars } from "../store";
+import Card from "./Card";
+import { useEffect } from "react";
+
 function CarList() {
+  const dispatch = useDispatch();
+  const carList = useSelector((state) => state.cars.carList);
+
+  useEffect(() => {
+    dispatch(fetchCars());
+  }, []);
+
+  const mapCars = (cars) => {
+    return cars.map((car) => (
+      <Card carName={car.name} value={car.value} id={car.id} key={car.id} />
+    ));
+  };
+
   return (
     <div className="car-list">
-      <div className="card">
-        <p className="card__name">Ford Maverick</p>
-        <p className="card__price">$15000</p>
-        <button className="card__delete btn warn">Delete</button>
-      </div>
+      {carList.length ? mapCars(carList) : "No cars"}
     </div>
   );
 }
