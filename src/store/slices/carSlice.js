@@ -43,5 +43,5 @@ const carSlice = createSlice({
   },
 });
 
-export const { changeName, changeValue } = carSlice.actions;
+export const { changeName, changeValue, changeSearchTerm } = carSlice.actions;
 export const carReducer = carSlice.reducer;
