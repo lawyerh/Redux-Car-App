@@ -1,0 +1,83 @@
+.car-entry {
+  display: flex;
+  align-items: end;
+  width: 90%;
+  margin: auto;
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+  }
+
+  &__input {
+    display: inline-block;
+    position: relative;
+    height: 2.5rem;
+    width: 15rem;
+    background-color: $white;
+    border: none;
+    border-radius: $input-br;
+    margin-right: 8rem;
+  }
+
+  &__submit {
+    margin-left: auto;
+  }
+}
+
+.search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
+
+  &__input {
+    font-size: 1.4rem;
+    width: 200rem;
+    max-width: 100%;
+    border-radius: $input-br;
+  }
+}
+
+.card {
+  background: linear-gradient(
+    to right,
+    $white 1%,
+    $primary-blue 33%,
+    $primary-blue 65%,
+    $black 66%
+  );
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid $black;
+  box-shadow: 0rem 1rem 3rem rgba($color: $black, $alpha: 0.4);
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+
+  &__name {
+    margin-right: 2rem;
+  }
+
+  &__price {
+  }
+
+  &__delete {
+    margin-left: auto;
+  }
+}
