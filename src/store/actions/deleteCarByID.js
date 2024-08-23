@@ -5,7 +5,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const deleteCarByID = createAsyncThunk("cars/deleteCar", async (id) => {
     try {
         const response = axios.delete(`${CARS_URL}/${id}`)
-        return response.data
+        return id
     } catch (error) {
         return error
     }

@@ -27,16 +27,18 @@ const carSlice = createSlice({
   },
   extraReducers(builder) {
     builder.addCase(fetchCars.fulfilled, (state, action) => {
+      // payload == all cars
       state.carList = action.payload;
     });
     builder.addCase(addCar.fulfilled, (state, action) => {
+      // payload == {added Car}
       state.carList = [...state.carList, action.payload];
       state.name = "";
       state.value = 0;
     });
     builder.addCase(deleteCarByID.fulfilled, (state, action) => {
-      const deletedCar = state.carList.indexOf(action.payload);
-      state.carList.splice(deletedCar, 1);
+      // payload == "id"
+      state.carList = state.carList.filter((car) => car.id !== action.payload);
     });
   },
 });
