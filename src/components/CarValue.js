@@ -1,4 +1,5 @@
 function CarValue() {
+  // Displays value of all cars
   return (
     <div className="car-value">
       <h2 className="heading-2">Total Value: $15000</h2>

@@ -1,4 +1,5 @@
 function CarSearch() {
+  // Allows user to query their vast car collection
   return (
     <div className="car-search">
       <h2 className="heading-2">My Cars</h2>

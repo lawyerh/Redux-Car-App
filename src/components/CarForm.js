@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeName, changeValue } from "../store";
 import { addCar } from "../store";
 
+// Allows user to enter in a new car to track it's $ value
+
 function CarForm() {
   const carName = useSelector((state) => state.cars.name);
   const carValue = useSelector((state) => state.cars.value);

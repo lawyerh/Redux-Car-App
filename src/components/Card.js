@@ -1,6 +1,8 @@
 import { useDispatch } from "react-redux";
 import { deleteCarByID } from "../store";
 
+// Displays car information and allows for deleting a car
+
 function Card({ carName, value, id }) {
 
   const dispatch = useDispatch();
