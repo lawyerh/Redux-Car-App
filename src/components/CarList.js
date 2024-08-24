@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchCars } from "../store";
 import Card from "./Card";
 import { useEffect } from "react";
-
 // Container for displaying all cars in DB
 
 function CarList() {
